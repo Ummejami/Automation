@@ -51,31 +51,41 @@ Test Data Layer (JSON files)
 ## 📂 Project Structure
 
 ```id="snc5zs"
+
 automation-project/
 │
 ├── src/
-│   ├── main/java/pages/
-│   │   ├── LoginPage.java
-│   │   └── HomePage.java
+│   ├── main/
+│   │   └── java/
+│   │       └── pages/              # Page Object Model classes
+│   │           ├── LoginPage.java
+│   │           └── HomePage.java
 │   │
-│   ├── test/java/tests/
-│   │   └── LoginTest.java
-│   │
-│   └── test/resources/
-│       └── testdata/
-│           └── loginData.json
+│   └── test/
+│       └── java/
+│           └── tests/              # Test classes
+│               ├── LoginTest.java
+│               └── CheckoutTest.java
 │
-├── utils/
+├── resources/
+│   ├── testdata/                   # Test data (JSON, Excel, etc.)
+│   └── config.properties           # Environment config
+│
+├── allure-results/                 # Raw Allure results (auto-generated)
+├── allure-report/                  # Generated HTML report
+│
+├── utils/                          # Utilities (Driver, Helpers)
 │   ├── DriverManager.java
-│   ├── JsonReader.java
 │   └── ScreenshotUtil.java
 │
-├── .github/workflows/
-│   └── ci.yml
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Action
 │
-├── pom.xml
-├── testng.xml
-└── README.md
+├── pom.xml                         # Maven dependencies
+├── testng.xml                      # TestNG config 
+├── README.md                       # Project documentation 
+└── .gitignore
 ```
 
 ---
