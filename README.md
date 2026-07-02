@@ -144,7 +144,7 @@ mvn clean test
 
 
 
-![Allure Report](images/allur.png)
+![Allure Report](allur.png)
 
 ---
 
