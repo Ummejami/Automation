@@ -142,9 +142,9 @@ mvn clean test
 
 ## 📊 Generate Allure Report
 
-```id="63v3lb"
-allure serve allure-results
-```
+
+
+![Allure Report](images/allur.png)
 
 ---
 
